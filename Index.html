@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>NeptuneMark</title>
+  </head>
+  <body>
+    <div class="">
+      <di class="container1">
+        <nav class="navbar">
+          <div class="container">
+            <div class="brand">
+              <img src="./Image/Neptune-mark-logo.png" alt="" />
+            </div>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="login-btn">Get Start</a></li>
+            </ul>
+            <div class="menu-toggle" id="icon">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+          </div>
+        </nav>
+        <div class="bar">
+          <ul class="bar-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="login-btn">Get Start</a></li>
+            <div class="clos" id="clos1"><i class="fa-solid fa-xmark"></i></div>
+          </ul>
+        </div>
+      </di>
+    </div>
+
+
+
+
+
+<!-- togle effect -->
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+      
+      $(document).ready(function () {
+        $("#clos1").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+    </script>
+<!-- togle effect end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

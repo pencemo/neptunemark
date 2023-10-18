@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.login-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.login-btn {
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.bar-link {
+    display: none;
+}
+.clos{
+    display: none;
+}
+
+/* Media queries for responsive design */
+/* @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+} */
+
+@media (max-width: 768px) {
+    
+
+    .nav-links li {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    .menu-toggle i{
+        cursor: pointer;
+        font-size: 24px;
+        color: rgb(94, 94, 94);
+    }
+
+    .bar-link {
+        display: block;
+        background-color: rgb(68, 68, 68);
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        right: -500px;
+        width: 400px;
+        height: 100%;
+        transition: all .5s ease-in-out;
+    }
+    .bar-link.show{
+        right: 0;
+    }
+
+    .bar-link li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .bar-link li {
+        list-style: none;
+        text-align: center;
+        line-height: 70px;
+    }
+    .clos{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+    .clos i{
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
