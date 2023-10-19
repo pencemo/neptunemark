@@ -134,6 +134,32 @@ body{
     cursor: pointer;
 }
 
+.bg-2{
+    background-color: #c71c30;
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+}
+.lap{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ img{
+    width: 100%;
+}
+.cal2{
+    color: #fff;
+}
+.cal2 h1{
+    font-size: 50px;
+}
+.cal2 p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 18px;
+}
+
 /* landing page bg  end*/
 
 @media (max-width: 990px){
