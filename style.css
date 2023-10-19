@@ -177,7 +177,23 @@ body{
         display: block;
     }
     
-
+    .bar-btn {
+        text-decoration: none;
+        padding: 0;
+        border-radius: 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .bar-bt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        background-color: #c71c30;
+        width: 170px;
+        height: 50px;
+    }
     .bar-link {
         display: block;
         background-color: rgb(46, 46, 46);
@@ -281,13 +297,13 @@ body{
     }
     
     .textside h2{
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 400;
         line-height: 50px;
         margin-top: 5px;
     }
     .textside h2 span{
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 600;
         color: #d02837;
     }
