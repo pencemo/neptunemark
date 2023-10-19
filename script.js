@@ -1,6 +1,9 @@
-// const menuToggle = document.querySelector('.menu-toggle');
-// const barlink = document.querySelector('.bar-link');
 
-// menuToggle.addEventListener('click', () => {
-//     barlink.classList.toggle('show');
-// });
+    var typed = new Typed('.auto-type', {
+      strings: ['Dreams', 'Bussines'],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+      smartBackspace: true,
+    });
+ 
