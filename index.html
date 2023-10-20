@@ -19,10 +19,15 @@
       crossorigin="anonymous"
     />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- sroll fade animation cdn -->
     <title>NeptuneMark</title>
   </head>
 
   <body>
+    <div class="loder">
+      <div class="loder-round"></div>
+      <div class="loder-round2"></div>
+    </div>
     <!-- navbar -->
     <div class="land-bg">
       <div class="container1">
@@ -109,14 +114,14 @@
 
 
 <div class="container"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
-  <div class="row bg-2">
+  <div class="row bg-2" data-aos="fade-up">
     
-      <div class="col-md-6 lap">
+      <div class="col-md-6 lap " data-aos="fade-up">
         <img class="lap-img" src="./Image/person-using-laptop.jpg" alt="">
       </div>
       <div class="col-md-6 cal2">
-        <h1>We Are</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, at neque repellendus blanditiis numquam eum omnis voluptates distinctio sunt eveniet aperiam praesentium laborum tempora corporis laboriosam alias nemo illo illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat voluptatibus dignissimos sapiente assumenda aspernatur culpa impedit unde, quisquam, dolorem fuga et accusantium deserunt itaque, quaerat iste cupiditate ex! Labore!</p>
+        <h1 data-aos="fade-up">We Are</h1>
+          <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, at neque repellendus blanditiis numquam eum omnis voluptates distinctio sunt eveniet aperiam praesentium laborum tempora corporis laboriosam alias nemo illo illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat voluptatibus dignissimos sapiente assumenda aspernatur culpa impedit unde, quisquam, dolorem fuga et accusantium deserunt itaque, quaerat iste cupiditate ex! Labore!</p>
       </div>
   </div>
 </div>
@@ -145,9 +150,17 @@
         });
       });
     </script>
-    <!-- togle effect end -->
+    <!--------------------------------->
 
-
+    <!-- sroll fade animation cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000
+      });
+    </script>
+    <!--------------------------------->
+    
     
     <script src="https://unpkg.com/lucide@latest"></script>
   <script>
