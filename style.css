@@ -18,55 +18,50 @@ body{
     background-color: #c71c30;
     position: fixed;
     top: 0;
-    display: grid;
-    place-content: center;
     z-index: 99;
     transition: opacity 0.5s, visibility 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loder--hide{
     opacity: 0;
     visibility: hidden;
 }
+.loder-sc{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
 .loder-round{
     width: 50px;
     height: 50px;
     background-color: rgba(255, 255, 255,0.5);
     border-radius: 50px;
-    animation: load 1s infinite;
+    animation: load 1.5s infinite;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .loder-round2{
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50px;
-    animation: load 1s infinite;
-    animation-delay: 0.5;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* .loder-round::after{
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255,0.5);
-    border-radius: 50px;
-    animation: load 1s infinite ;
+    animation: load 1.5s infinite;
     animation-delay: .7s;
-} */
+    position: absolute;
+}
+
 
 @keyframes load{
-    from{
+    0%{
         transform: scale(0);
     }
-    to{
-        transform: scale(1);
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(0);
     }
 }
 
