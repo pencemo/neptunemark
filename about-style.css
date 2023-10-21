@@ -31,15 +31,24 @@ body{
 .nav-links img{
     width: 175px;
 }
-
 .nav-links ul{
-    margin-top: 10px;
+    margin-bottom: 40px;
 }
+
 .nav-links ul li{
     list-style: none;
     display: inline;
-    margin-right: 20px;
-    
+    padding-left: 24px;
+}
+.nav-links ul li:last-child{
+    background-color: #c71c30;
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+.nav-links ul li:last-child a{
+    color: #fff;
 }
 .nav-links a{
     text-decoration: none;
@@ -128,6 +137,7 @@ body{
     }
     .nav-links ul li{
         border-bottom: solid rgba(201, 201, 201, 0.7) .5px;
+        width: 230px;
     }
 
     .nav-links ul li:last-child{
@@ -140,18 +150,16 @@ body{
         justify-content: center;
     }
     .nav-links ul li:last-child a{
-        border: none;
-        background-color: #c71c30;
-        padding: 20px 80px;
-        line-height: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 20px 60px;
     }
     .nav-links ul li a{
         color: #fff;
         font-size: 18px;
         font-weight: 300;
+    }
+    .logo2 img{
+        width: 150px;
+        margin-bottom: 80px;
     }
     
 }
