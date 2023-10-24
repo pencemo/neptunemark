@@ -40,9 +40,9 @@
       // scroll animation
       $(window).on('scroll', function(){
           if ($(window).scrollTop()) {
-          $("section").addClass('scroll');
+          $(".nav-bar").addClass('scroll');
           }else{
-          $("section").removeClass('scroll');
+          $(".nav-bar").removeClass('scroll');
           }
       });
       // ------------

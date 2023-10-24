@@ -2,7 +2,7 @@
 .nav-bar{
     width: 100%;
     position: fixed;
-    transition: all .5s linear;
+    transition: all .3s linear;
     z-index: 8;
 }
 .nav-links{
@@ -154,7 +154,7 @@
         border-radius: 0;
     }
     .nav-links ul li:nth-child(6) a{
-        padding: 20px 66px;
+        padding: 20px 60px;
     }
     .nav-links ul li a{
         color: #fff;
@@ -173,7 +173,8 @@
         color: rgb(196, 196, 196);
         font-size: 11px;
         font-weight: 100;
-        margin-top: 35px;
+        position: absolute;
+        bottom: 0;
     }
     
 }
