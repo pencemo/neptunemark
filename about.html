@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="about-style.css" />
+    <link rel="stylesheet" href="body.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -47,6 +48,7 @@
                     <li><a href="">Services</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Get Start</a></li>
+                    <p class="copy">© 2023 NeptuneMark, All rights reserved</p>
                 </ul>
                 
                 <div class="menu-bar">
@@ -107,10 +109,14 @@
 
     <!-- sroll fade animation cdn -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
     <!--------------------------------->
+
+
+    <!-- jaqury -->
     <script>
             $(document).ready(function () {
+
+            // scroll animation
             $(window).on('scroll', function(){
                 if ($(window).scrollTop()) {
                 $("section").addClass('scroll');
@@ -118,6 +124,9 @@
                 $("section").removeClass('scroll');
                 }
             });
+            // ------------
+
+            // toggle animation
             $("#toggle").click(function () {
                   $("#bar").toggleClass("open");
                   $("#line1").toggleClass("iconanim1");
@@ -126,9 +135,11 @@
                   $(".icon-line").toggleClass("color");
                   $(".menu").toggleClass("color1");
              });
-                
+            // ------------
+
             });
     </script>
+
     
     <script src="https://unpkg.com/lucide@latest"></script>
   <script>

@@ -27,22 +27,37 @@
 // sroll fade animation cdn 
    
       AOS.init({
-        duration: 1000
+        duration: 600
       });
 //--------------------------//     
 
 
-// toggle animation
+     
+//jaquary-----------
 
       $(document).ready(function () {
-        $("#icon").click(function () {
-          $("ul").toggleClass("show");
-        });
-        $("#clos1").click(function () {
-          $("ul").removeClass("show");
-        });
+
+      // scroll animation
+      $(window).on('scroll', function(){
+          if ($(window).scrollTop()) {
+          $("section").addClass('scroll');
+          }else{
+          $("section").removeClass('scroll');
+          }
       });
+      // ------------
 
-     
-//--------------------------//
+      // toggle animation
+      $("#toggle").click(function () {
+            $("#bar").toggleClass("open");
+            $("#line1").toggleClass("iconanim1");
+            $("#line2").toggleClass("iconanim2");
+            $("#line3").toggleClass("iconanim3");
+            $(".icon-line").toggleClass("color");
+            $(".menu").toggleClass("color1");
+      });
+      // ------------
 
+});
+
+//jaquary end------

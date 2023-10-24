@@ -1,15 +1,16 @@
-
-body, ul {
+body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
 }
-
-body{
+.landbg{
+    width: 100%;
+    height: 100vh;
     background-image: url(./Image/backgrund-main.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -70,72 +71,6 @@ body{
 
 /*--------------------- */
 
-
-/* Navbar styles */
-.navbar {
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.land-bg{
-    width: 100%;
-    height: 100vh;
-}
-
-.nav-containaer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    padding: 0 20px;
-    z-index: 7;
-}
-
-.brand img {
-    width: 170px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 30px;
-    margin-top: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: rgb(58, 58, 58);
-    font-size: 17px;
-    font-weight: 400;
-}
-.nav-links li:last-child a{
-    color: #fff;
-}
-
-.login-btn {
-    background-color: #d02837;
-    color: #fff;
-    padding: 6px 16px;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.login-btn {
-    color: #fff;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-.bar-link {
-    display: none;
-}
-.clos{
-    display: none;
-}
 
 /* landing page bg */
 
@@ -249,108 +184,7 @@ body{
 }
 
 @media (max-width: 768px) {
-    
-/* nav bar */
-    .container1{
-        margin-top: 20px;
-    }
-    .nav-links li {
-        display: none;
-    }
-    .menu-toggle {
-        cursor: pointer;
-        color: rgb(46, 46, 46);
-        z-index: 8;
-        display: block;
-    }
-    
-    .bar-btn {
-        text-decoration: none;
-        padding: 0;
-        border-radius: 0;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 200;
-    }
-    .bar-bt{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-        background-color: #c71c30;
-        width: 170px;
-        height: 50px;
-    }
-    .bar-link {
-        display: block;
-        background-color: rgb(46, 46, 46);
-        position: fixed;
-        top: 0;
-        right: -350px;
-        width: 300px;
-        height: 100%;
-        transition: all .5s ease-in-out;
-        z-index: 9;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: start;
-        overflow: hidden;
-    }
-    .bar-link.show{
-        right: 0;
-    }
-
-    .bar-link li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 19px;
-        font-weight: 400;
-    }
-    .line{
-        width: 200px;
-        height: 1px;
-        background-color: #888888;
-    }
-    .logo-wt img{
-        width: 120px;
-        position: absolute;
-        top: 30px;
-    }
-    .bar-link li {
-        list-style: none;
-        line-height: 50px;
-    }
-    .bar-media-icon i{
-        color: #fff;
-        font-size: 22px;
-        margin-top: 100px;
-        padding : 6px;
-        cursor: pointer;
-    }
-    .bar-link p{
-        font-size: 12px;
-        font-weight: 100;
-        color: rgb(170, 170, 170);
-        line-height: 13px;
-        position: absolute;
-        bottom: 0;
-    }
-
-    .clos{
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 40px;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    /* nav bar  end*/
-
-
-
-    body{
+    .landbg{
         background-image: none;
     }
     .mainbg{
@@ -359,6 +193,9 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .imgside{
+        margin-top: 60px;
     }
     
     .textside{
