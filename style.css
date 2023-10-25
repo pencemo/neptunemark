@@ -137,21 +137,22 @@ body{
     background-color: #a00f0f;
 }
 
-.bg-2{
-    display: flex;
-    align-items: center;
-    padding: 30px 30px;
-}
-.lap{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+
+
+/* 2th secion */
+
+
 .section-2-img{
-    width: 100%;
+    width: 90%;
 }
 .section-2{
     padding-left: 15px;
+    margin: 15px 0;
+}
+.bg-2{
+    display: flex;
+    align-items: center;
 }
 .section-2 h1{
     font-size: 50px;
@@ -162,14 +163,21 @@ body{
     font-size: 17px;
     font-weight: 300;
     line-height: 18px;
+    margin-bottom: 20px;
 }
 .dl-btn{
+    margin-top: 15px;
     background-color: #c71c30;
-    padding: 5px 15px;
+    padding: 10px 15px;
     color: #fff;
     text-decoration: none;
-    margin-top: 50px;
 }
+
+/* ----------------------------*/
+
+
+
+/* logo scroll aniamtion */
 
 .logoimgs{
     overflow: hidden;
@@ -219,7 +227,9 @@ body{
     }
 }
 
-/* landing page bg  end*/
+/*-----------------------*/
+
+
 
 @media (max-width: 990px){
     .social-media .round{
