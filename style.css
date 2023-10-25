@@ -171,6 +171,54 @@ body{
     margin-top: 50px;
 }
 
+.logoimgs{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.logoimgs::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(-90deg, rgba(255,255,255,0), rgba(255,255,255,0), rgb(255, 255, 255));
+    z-index: 1;
+}
+.logoimgs::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0), rgb(255, 255, 255));
+    z-index: 1;
+}
+
+.logos{
+    margin: 40px 0;
+    display: inline-block;
+    animation: scroll 12s linear infinite;
+}
+.logos img{
+    width: 130px;
+    margin: 0 40px;
+}
+.logos img:last-child{
+    width: 90px;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
 /* landing page bg  end*/
 
 @media (max-width: 990px){
