@@ -103,12 +103,64 @@
     </div>
 </div>
 
+<!-- footer for all page -->
 
+<section class="footer">
+    <div class="container"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+      <div class="row " >
+        
+          
+          <div class="col-md-4 Contact" data-aos="fade-up">
+            <h6>Office</h6>
+            <p><a href="https://maps.app.goo.gl/zMguVmn3NbNHkdAb7">NeptuneMark <br> Near Markaz Knowedge City,<br> Calcut, Kerala - 673586</a></p>
+              <p><i class="fa-solid fa-phone"></i> <a href="tel:+918590305060"> +91 8590 30 50 60</a></p>
+              <p><i class="fa-solid fa-envelope"></i><a href="mailto:neptunemarkindia@gmail.com">  neptunemarkindia@gmail</a></p>
+          </div>
+          <div class="col-md-4 links " data-aos="fade-up">
+            <h6>Quick Link</h6>
+            <ul>
+              <li><a href="">Go to Home</a></li>
+              <li><a href="about.html">About Us & Our Team</a></li>
+              <li><a href="">Provided Services</a></li>
+              <li><a href="">Contact for more</a></li>
+              <li><a href="">Get Start</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 Social-Media " data-aos="fade-up">
+            <h6>Social Media</h6>
+            <a href="https://www.facebook.com/neptunemarkcreatives"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/neptune_mark"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://wa.me/+918590305060"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            <a href="https://www.behance.net/neptunemark"><i class="fa-brands fa-behance"></i> Behance</a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          </div>
+      </div>
+      <div class="raw"> <div class="line-botam"></div></div>
+      
+        <div class="row foot-logo" >
+          <div class="col-md-6 " >
+            <img src="/Image/7172287_3570451.png" alt="">
+          </div>
+          <div class="col-md-6 Copyright">
+            <p>Copyright © 2023 NeptuneMark, All rights reserved</p>
+          </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!--------------------------------->   
 
 
 
     <!-- sroll fade animation cdn -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script >
+        AOS.init({
+        duration: 600
+      });
+    </script>
     <!--------------------------------->
 
 
@@ -119,9 +171,9 @@
             // scroll animation
             $(window).on('scroll', function(){
                 if ($(window).scrollTop()) {
-                $("section").addClass('scroll');
+                $(".nav-bar").addClass('scroll');
                 }else{
-                $("section").removeClass('scroll');
+                $(".nav-bar").removeClass('scroll');
                 }
             });
             // ------------
@@ -151,6 +203,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    
   </body>
 </html>

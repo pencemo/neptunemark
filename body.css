@@ -100,23 +100,33 @@
 
 
  /*------------ Footer ------------*/
+ :root {
+    --light-color: rgb(235, 137, 137);
+  }
+
+  .footer{
+    background-color: #c71c30;
+    padding: 30px 30px;
+  }
 
 .footer h6{
     color: #fff;
-    font-size: 22PX;
+    font-size: 23PX;
     font-weight: 400;
     margin-bottom: 20px;
 }
 .Contact P{
-    color: rgb(253, 212, 212);
-    font-size: 16PX;
-    font-weight: 200;
-    line-height: 17PX;
-    margin: 6PX 0;
+    color: var(--light-color);
+    font-size: 17PX;
+    font-weight: 300;
+    line-height: 19PX;
+    margin: 7PX 0;
+    transition: all .3s ease-in-out;
 }
 .Contact a{
-    color: #fff;
+    color: var(--light-color);
     text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 
 .links ul{
@@ -125,16 +135,17 @@
 }
 .links ul li{
     margin-left: -30px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .Social-Media a,
 .links ul li a{
-    color: #fff;
+    color: var(--light-color);
     text-decoration: none;
-    font-size: 16PX;
-    font-weight: 200;
+    font-size: 17PX;
+    font-weight: 300;
     display: block;
+    transition: all .3s ease-in-out;
 }
 
 .Social-Media a i{
@@ -149,16 +160,22 @@
     margin-bottom: 15px;
 }
 .foot-logo img{
- width: 150px;
+ width: 140px;
 }
 .Copyright{
-    color: #fff;
+    color: var(--light-color);
     font-size: 12px;
     font-weight: 200;
     display: flex;
     justify-content: end;
 }
 
+.Contact P:hover,
+.Contact a:hover,
+.Social-Media a:hover,
+.links ul li a:hover{
+    color: #fff;
+}
 
 @media (max-width: 768px){
 
