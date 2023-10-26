@@ -12,40 +12,34 @@
     display: flex;
 }
 
-.main-img{
-    width: 500px;
-    position: absolute;
-    bottom: 300px;
-    right: 35px;
-}
 .img1{
-    color: #e65ed3;
-    font-size: 20px;
+    color: #875ee6;
+    font-size: 13px;
     position: relative;
-    top: 150px;
+    top: 100px;
     left: 200px;
     width: 20px;
-    animation: 5s img1an infinite ease-in-out;
+    animation: 5s star infinite ease-in-out;
 }
 
-@keyframes img1an {
+@keyframes star {
     0%{
-        transform: translate(0);
+        transform: translate(0) rotate(0);
     }
     
     50%{
-        transform: translate(130px);
+        transform: translate(130px) rotate(180deg);
     }
     
     100%{
-        transform: translate(0px);
+        transform: translate(0px) rotate(0);
     }
 }
 
 .settings{
     position: absolute;
     right: 120px;
-    top: 400px;
+    top: 700px;
     font-size: 35px;
     animation: rotate 6s infinite ease-in-out;
     color: #d6d6d6;
@@ -87,12 +81,76 @@
     }
 }
 
-
+/* 
 @media (max-width: 768px){
     .main-img{
         width: 350px;
         top: 150px;
         left: 50px;
     }
+
+} */
+.animbg{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.main-img{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    right: 250px;
+    z-index: -1;
+}
+.main-img img{
+    width: 500px;
+    animation: 6s imganima infinite ease;
+}
+@keyframes imganima {
+    0%{
+        transform: translate(0) rotate(-5deg);
+    }
+    50%{
+        transform: translate(-50px) rotate(5deg);
+    }
+    100%{
+        transform: translate(0) rotate(-5deg);
+    }
+}
+
+
+@media (max-width: 1500px){
+    .main-img{
+        right: 50px;
+    }
+
+}
+@media (max-width: 1200px){
+    .main-img{
+        right: 30px;
+    }
+    .main-img img{
+        width: 400px;
+    }
+
+}
+@media (max-width: 768px){
+    .main-img{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+    .main-img img{
+        width: 300px;
+    }
+
+}
+@media (max-width: 1500px){
+    
 
 }
