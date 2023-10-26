@@ -1,17 +1,12 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    
 }
-.landbg{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./Image/backgrund-main.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+html{
+    scroll-behavior: smooth;
 }
+
 
 
 /* load animation */
@@ -72,55 +67,43 @@ body{
 /*--------------------- */
 
 
+
+
+
+
 /* landing page bg */
 
-.textside{
+.land-page{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.section-1{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    z-index: 0;
-}
-.imgside img{
-    display: none;
-}
-.social-media{
-    display: flex;
-}
-.social-media .round{
-    width: 30px;
-    height: 30px;
-    border: solid #888888 1.5px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 6px;
-    cursor: pointer;
-}
-.round i{
-    color: #888888;
-    transition: all 0.3s linear;
-}
-.round i:hover{
-    color: #272727;
+    margin-top: 60px;
 }
 
-.textside h2{
+.section-1 h2{
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 90px;
-    color: #e64c59;
+    color: #f35966;
+    font-family: 'Montagu Slab', serif;
+}
+.section-1 h2 span{
+    font-size: 130px;
+    font-weight: 500;
+    color: #d02837;
     font-family: 'Playfair Display', serif;
 }
-.textside h2 span{
-    font-size: 130px;
-    font-weight: 700;
-    color: #d02837;
-}
-.textside p{
+.section-1 p{
     font-size: 40px;
+    font-weight: 300;
+    font-family: 'Montagu Slab', serif;
 }
 .start-btn a{
     font-weight: 400;
@@ -158,19 +141,23 @@ body{
     font-size: 50px;
     font-weight: 600;
     color: #27306b;
+    font-family: 'Montserrat', sans-serif;
 }
 .section-2 p{
     font-size: 17px;
     font-weight: 300;
     line-height: 18px;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 .dl-btn{
     margin-top: 15px;
-    background-color: #c71c30;
+    background: linear-gradient(90deg, #ee3a68, #f79157);
     padding: 10px 15px;
     color: #fff;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 /* ----------------------------*/
@@ -178,6 +165,21 @@ body{
 
 
 /* logo scroll aniamtion */
+
+.logo-hed{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.logo-hed p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(49, 49, 49);
+    border-bottom: #a00f0f solid 1px;
+}
 
 .logoimgs{
     overflow: hidden;
@@ -232,21 +234,16 @@ body{
 
 
 @media (max-width: 990px){
-    .social-media .round{
-        width: 27px;
-        height: 27px;
-    }
-    .textside h2{
+    .section-1 h2{
         font-size: 60px;
-        font-weight: 500;
+        font-weight: 100;
         line-height: 70px;
     }
-    .textside h2 span{
+    .section-1 h2 span{
         font-size: 100px;
-        font-weight: 600;
-        color: #d02837;
+        font-weight: 700;
     }
-    .textside p{
+    .section-1 p{
         font-size: 30px;
     }
     .start-btn a{
@@ -257,60 +254,28 @@ body{
 }
 
 @media (max-width: 768px) {
-    .landbg{
-        background-image: none;
-    }
-    .mainbg{
-        width: 90%;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
+    .section-1{
+        margin-top: 150px;
         align-items: center;
     }
-    .imgside{
-        margin-top: 60px;
-    }
-    
-    .textside{
-        display: flex;
-        flex-direction: column;
-        margin-left: 15%;
-    }
-    .imgside img{
-        display: block;
-        width: 270px;
-        z-index: 0;
-        margin-top: 20px;
-    }
-
-    .social-media .round{
-        width: 25px;
-        height: 25px;
-        border: #888888 solid 1px;
-    }
-    .round i{
-        color: #888888;
-        font-size: 14px;
-    }
-    
-    .textside h2{
-        font-size: 45px;
-        font-weight: 400;
+    .section-1 h2{
+        font-size: 40px;
+        font-weight: 200;
         line-height: 50px;
         margin-top: 5px;
+        text-align: center;
     }
-    .textside h2 span{
+    .section-1 h2 span{
         font-size: 60px;
         font-weight: 600;
         color: #d02837;
     }
-    .textside p{
-        font-size: 22px;
+    .section-1 p{
+        font-size: 20px;
         font-weight: 300;
     }
     .start-btn a{
         font-weight: 300;
-        text-decoration: none;
         font-size: 20px;
         padding: 8px 20px;
     }
