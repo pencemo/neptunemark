@@ -260,6 +260,72 @@ html{
 
 /*-----------------------*/
 
+/* slide animation */
+
+.testmo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.testmo p{
+    font-size: 26px;
+    font-weight: 600;
+    color: #27306b;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .swiper-slide{
+      background-color: #e7e7e7;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      box-shadow: rgba(29, 29, 29, 0.2) 0px 0px 10px;
+  }
+  .profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .profile img{
+      width: 100%;
+  }
+  .name{
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 0;
+  }
+  .desi{
+    font-size: 13px;
+    font-weight: 300; 
+    line-height: 0;
+  }
+  .stars{
+      font-size: 12px;
+      color: #e77b16;
+  }
+  .last{
+      color: #bbbbbb;
+  }
+  .long{
+      font-size: 12px;
+      line-height: 15px;
+  }
+/*-----------------------*/
+
+
+
 
 
 @media (max-width: 990px){
@@ -309,9 +375,9 @@ html{
         padding: 8px 20px;
     }
     .head-3{
-        font-size: 26px;
-        font-weight: 300;
-        line-height: 28px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
         font-family: 'Montagu Slab', serif;
         padding-left: 20px;
     }
@@ -319,6 +385,9 @@ html{
         font-size: 15px;
         max-width: 90%;
         padding-left: 20px;
+    }
+    .collams img{
+        width: 450px;
     }
 
 }
