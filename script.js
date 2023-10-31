@@ -65,16 +65,35 @@
 
 
 
+//slide animation
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+  slidesPerView: 3,
   spaceBetween: 30,
   autoplay:{
-    delay:2500,
+    delay:3000,
     disableOnInteraction: false,
   },
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
+  },
+
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    }
   },
 });
