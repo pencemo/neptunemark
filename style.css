@@ -297,12 +297,18 @@ html {
 /*-----------------------*/
 
 
-
+.box-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 
 .box-3{
     padding: 20px;
     width: 100%;
-    min-height: 300px;
+    max-width: 350px;
+    min-height: 400px;
     background-color: #c2213b;
     margin-top: 20px;
     display: flex;
@@ -314,10 +320,9 @@ html {
 }
 
 .box-3 i{
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     font-size: 50px;
     margin: 10px 10px;
-    background-color: #ffffff;
     width: 80px;
     height: 80px;
     display: flex;
@@ -330,13 +335,22 @@ html {
 }
 .box-3 p{
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     text-align: center;
-    line-height: 14px;
+    line-height: 17px;
 }
 .box-3:hover{
     transform: translateY(-15px);
+}
+
+
+.para{
+    margin: 50px 0;
+}
+.para p{
+    text-align: center;
+    font-size: 15px;
 }
 
 
