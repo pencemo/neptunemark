@@ -227,8 +227,8 @@ html {
 
 .logo-hed p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     color: #27306b;
 }
 .logo-hed p::after{
@@ -297,29 +297,23 @@ html {
 /*-----------------------*/
 
 
-.box-cont{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
+
 
 .box-3{
     padding: 20px;
     width: 100%;
     max-width: 350px;
-    min-height: 400px;
+    min-height: 450px;
     background-color: #c2213b;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border-radius: 15px;
     transition: all 0.3s ease;
+    margin:10px auto ;
 }
 
-.box-3 i{
+.box-3 .icon{
     color: rgb(255, 255, 255);
     font-size: 50px;
     margin: 10px 10px;
@@ -340,6 +334,40 @@ html {
     text-align: center;
     line-height: 17px;
 }
+.box-3 a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.box-3 a i{
+    color: #a30808;
+    font-size: 20px;
+}
+
+.box-3 a:hover{
+    width: 100px;
+}
+.box-3 a::before{
+    content: "";
+    color: #f3f3f3;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.box-3 a:hover::before{
+    content: "Read More";
+    text-decoration: none;
+    font-size: 12px;
+    color: #a00f0f;
+    opacity: 1;
+}
+
+
 .box-3:hover{
     transform: translateY(-15px);
 }
