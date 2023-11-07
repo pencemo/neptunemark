@@ -33,43 +33,71 @@ body{
 }
 
 .section{
-    background-color: rgb(245, 245, 245);
+    background-color: #27306b;
     padding:  50px 0;
     margin: 20px 0;
 }
 .our-service{
     font-size: 30px;
     font-weight: 600;
-    color: #27306b;
+    color: #ffffff;
 }
 
 .our-service::after {
     content: "";
     width: 70px;
     height: 2px;
-    background-color: #27306b;
+    background-color: #ffffff;
     display: block;
     position: relative;
     bottom: 5px;
     left: 0;
 }
-
+.box-cont{
+    display: flex;
+    justify-content: center;
+}
 .box-3 .icon{
     font-size: 40px;
-    color: #27306b;
-    margin-bottom: 15px;
+    color: #ffffff;
+    margin: 25px 0;
 }
 .box-3 h3{
     font-size: 26px;
-    color: #27306b;
+    color: #ffffff;
+    text-align: center;
 }
 
 .box-3 p{
     font-size: 14px;
-    line-height: 20px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
 }
 .box-3{
+    margin: auto;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #ffffff solid 1px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    min-height: 300px;
+    transition: all .3s ;
+}
+
+.box-3:hover{
+    background: #ffffff;
+    color: #ffffff;
+    transform: rotate(2deg);
+    box-shadow: rgb(28, 4, 116) 0px 1px 10px;
+}
+.box-3:hover .icon,
+.box-3:hover h3,
+.box-3:hover p{
+    color: #27306b;
 }
 
 
@@ -82,7 +110,11 @@ body{
         font-weight: 600;
     }
     .box-3{
-        margin-top: 20px;
+        max-width: 350px;
+        margin-top: 25px;
+        padding: 10px 30px;
+        border-radius: 25px;
+        min-height: 150px;
     }
     .bg-contant{
         margin: 150px 0 80px;
